@@ -6,13 +6,14 @@
     
     <!-- Updated Content Security Policy Meta Tag -->
     <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self'; 
-      script-src 'self' 'unsafe-inline'; 
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
-      font-src 'self' https://fonts.gstatic.com;
-      frame-src 'self' https://shalta-restaurant.github.io/Menu/;
-      img-src 'self' data:;
-    ">
+        default-src 'self'; 
+        script-src 'self' 'unsafe-inline'; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com;
+        object-src 'self' https://shalta-restaurant.github.io/menu/;
+        frame-src 'self' https://shalta-restaurant.github.io/menu/;
+        img-src 'self' data:;
+      ">
     
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,11 +40,14 @@
     <meta name="twitter:card" content="" />
   </head>
   <body>
-    <iframe
-      src="https://shalta-restaurant.github.io/menu/shalta-menu.pdf"
+  <object
+      data="https://shalta-restaurant.github.io/menu/shalta-menu.pdf"
+      type="application/pdf"
       width="100%"
       height="600px"
-      style="border: none"
-    ></iframe>
+    >
+      <embed src="https://shalta-restaurant.github.io/menu/shalta-menu.pdf" type="application/pdf" width="100%" height="600px" />
+      <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://shalta-restaurant.github.io/menu/shalta-menu.pdf">Download PDF</a>.</p>
+  </object>
   </body>
 </html>
