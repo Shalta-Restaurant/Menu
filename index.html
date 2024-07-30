@@ -15,7 +15,7 @@
       property="og:description"
       content="Shalta Restaurant Online Menu"
     />
-    <meta name="og:image" property="og:image" content="" />
+    <meta name="og:image" property="og:image" content="https://shalta-restaurant.github.io/Menu/pages/p1.png" />
     <meta name="og:image:type" property="og:image:type" content="image/png" />
     <meta
       name="og:url"
@@ -25,24 +25,51 @@
 
     <meta name="twitter:title" content="Shalta" />
     <meta name="twitter:description" content="Shalta Restaurant Online Menu" />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="https://shalta-restaurant.github.io/Menu/pages/p1.png" />
     <meta name="twitter:card" content="" />
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
         }
-        img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+        
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: #f8f8f8;
+          font-family: Arial, sans-serif;
+        }
+        
+        .image-container {
+          width: 100%;
+          max-width: 1000px; /* Adjust as needed */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .image-container img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+          .image-container img {
+            margin-bottom: 15px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .image-container img {
+            margin-bottom: 10px;
+          }
         }
     </style>
-    
   </head>
   <body>
     <img src="https://shalta-restaurant.github.io/Menu/pages/p1.png" alt="Page 1">
